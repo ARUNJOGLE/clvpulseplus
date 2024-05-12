@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+h1 {
+  color: black;
+}
+h1:hover {
+  color: rgb(255, 42, 42);
+}
+
+#name {
+  text-align: center;
+  animation: textAnime 1s linear infinite alternate;
+}
+
+@keyframes textAnime {
+  0% {
+    color: white;
+    text-shadow: 0 0 10px black;
+  }
+  100% {
+    color: yellow;
+    text-shadow: 0 0 10px rgb(2, 0, 97);
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  animation: textAnime 1s linear infinite alternate;
+}
+
+#plot-container {
+  text-align: center;
+}
+
+#plot1 {
+  margin-top: 20px;
+  border: 10px solid #ffffff5b;
+  background-color: rgba(95, 95, 95, 0.521);
+}
+
+#plot2 {
+  margin-top: 20px;
+  border: 10px solid #ffffff5b;
+  background-color: rgba(95, 95, 95, 0.226);
+}
+
+#plot3 {
+  margin-top: 20px;
+  border: 10px solid #ffffff5b;
+  background-color: rgba(95, 95, 95, 0.226);
+}
+
+#analysis {
+  margin-top: 20px;
+}
+
+#downloadCSV {
+  margin-top: 20px;
+}
+
+input#file-upload-button {
+  height: 60px;
+  width: 100px;
+  background-color: #00ff7f;
+}
+
+/* Styles for the download button */
+/* 
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#downloadCSV {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* Styles for the loader */
+#loader {
+  display: none; /* Initially hidden */
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite; /* Apply animation */
+}
+
+/* Animation for the loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* tables */
+
+.analysis-table {
+  background-color: rgb(0 0 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft black shadow */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; /* Rounded corners */
+  overflow-wrap: break-word;
+}
+
+.table-cell {
+  padding: 12px; /* Increased padding */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border between cells */
+  font-size: 16px; /* Larger font size */
+}
+
+.table-row {
+  color: rgb(96 255 249); /* Dark red text for table rows */
+}
+
+.markedResult {
+  color: #00ff7f; /* Gold text */
+  font-size: 18px; /* Larger font size */
+}
+
+.title-table {
+  color: rgb(255 255 255); /* Dark gray text */
+  font-size: 20px; /* Larger font size */
+}
+
+/* canvas styles */
+
+canvas {
+  width: auto;
+  margin: 20px;
+}

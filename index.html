@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLV PULSE</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="name">CLV PULSE - A DYNAMIC CUSTOMER LIFETIME VALUE PREDICTOR</h1>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>
+          Dynamic Data
+          Processing(CDN:https://cloud.google.com/products/databases)
+        </h1>
+        <div id="plot-container">
+          <canvas id="plot1" width="300" height="200"></canvas>
+        </div>
+
+        <h1>Polar Area of Each segmentations</h1>
+        <div id="plot-container">
+          <canvas id="plot2" width="300" height="200"></canvas>
+        </div>
+
+        <h1>Analysis via Radar Data</h1>
+        <div id="plot-container">
+          <canvas id="plot3" width="300" height="200"></canvas>
+        </div>
+
+        <div id="analysis"></div>
+
+        <!-- Download button with onclick event -->
+        <!-- <button id="downloadBtn" onclick="downloadCSV()">Download CSV</button> -->
+
+        <!-- Loader element for animation -->
+        <!-- <div id="loader"></div> -->
+      </section>
+
+      <!-- Add other sections like About, Pricing, Team, Contact, Login here -->
+    </main>
+
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/ARUNJOGLE"
+            >ARUNJOGLE <br />All Rights Reserved.</a
+          >
+        </li>
+        <!-- Add more social media icons and links -->
+      </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
