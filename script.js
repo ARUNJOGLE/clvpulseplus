@@ -16,7 +16,7 @@
 // Base OUTLET UNITS
 
 var customerValue = 50000;
-var intervalTime = 100;
+var intervalTime = 2000;
 
 // Dynamic graph - line plot
 function plotData1() {
