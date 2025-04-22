@@ -19,7 +19,7 @@ var customerValue = 50000;
 var intervalTime = 2000;
 
 // Dynamic graph - line plot
-ffunction plotData1() {
+function plotData1(sfiweuf998eu983r8uq3ru0q3u) {
   const ctx = document.getElementById("plot1").getContext("2d");
   const chart = new Chart(ctx, {
     type: "line",
